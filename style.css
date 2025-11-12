@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f4f4f4;
+}
+
+h1 {
+  margin: 20px 0;
+}
+
+#container {
+  display: grid;
+  width: 800px;
+  height: 400px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 5px;
+  grid-template-areas:
+    "uno dos tres tres"
+    "uno cinco siete cuatro"
+    "uno ocho seis cuatro";
+}
+
+.caja {
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  text-align: center;
+}
+
+/* Áreas */
+.uno    { grid-area: uno; background-color: green; }
+.dos    { grid-area: dos; background-color: green; }
+.tres   { grid-area: tres; background-color: red; }
+.cuatro { grid-area: cuatro; background-color: green; }
+.cinco  { grid-area: cinco; background-color: orange; }
+.seis   { grid-area: seis; background-color: orange; }
+.siete  { grid-area: siete; background-color: red; }
+.ocho   { grid-area: ocho; background-color: orange; }
+
+
+#container {
+  display: grid;
+  width: 800px;
+  height: 400px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 5px;
+  grid-template-areas:
+    "uno dos tres tres"
+    "uno cinco siete cuatro"
+    "uno ocho seis cuatro";
+  
+  border: 5px solid black; 
+  padding: 5px;
+}
